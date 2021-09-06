@@ -48,10 +48,10 @@ But it is not limited to these, users can use the source code to expand its func
   2021/05/21 add the extraction and conversion for the 'all' option in IGS and MGEX observation downloading
 - Vers. 1.7  
   2021/06/01 add 'getObc', 'getObg', and 'getObh' options for Curtin University of Technology (CUT), Geoscience Australia (GA), and Hong Kong CORS observation downloading
-- Vers. 1.7  
-  2021/09/01 add various types of (i.e., ESA, GFZ, IGS, WHU) and rapid (i.e., CODE, NRCan, ESA, GFZ, IGS) orbit and clock products for downloading (by Feng Zhou @ SDUST and Sermet Ogutcu @ NEU)
-  2021/09/04 add the option for NGS/NOAA CORS (from Amazon Web Services (AWS)) and EUREF Permanent Network (EPN) observation downloading (by Feng Zhou @ SDUST)
-  2021/09/05 fix the bug of broadcast ephemeris downloading via WHU FTP before and after 2020 (by Feng Zhou @ SDUST and Zan Liu @ CUMT)
+- Vers. 1.8  
+  2021/09/01 add various types of (i.e., ESA, GFZ, IGS, WHU) and rapid (i.e., CODE, NRCan, ESA, GFZ, IGS) orbit and clock products for downloading (by Feng Zhou @ SDUST and Sermet Ogutcu @ NEU)  
+  2021/09/04 add the option for NGS/NOAA CORS (from Amazon Web Services (AWS)) and EUREF Permanent Network (EPN) observation downloading (by Feng Zhou @ SDUST)  
+  2021/09/05 fix the bug of broadcast ephemeris downloading via WHU FTP before and after 2020 (by Feng Zhou @ SDUST and Zan Liu @ CUMT)  
   2021/09/06 modify the setting of directories of GNSS observations and products in configure file to make them more elastic (by Feng Zhou @ SDUST and Caoming Fan @ SDU)
 # Install
 The source codes are written in ANSI C/C++, which are cross-platform and can be compiled on Windows, Linux/Unix and Mac OS. NOTE: Double-clicking the executable program does not work for data downloading. The correct way is to type ‘run_GAMP_GOOD  gamp_good.cfg’ on the terminal.
@@ -66,7 +66,7 @@ If some GNSS data cannot be successfully downloaded, check your network first. T
 - the suggestion of adding the option of rate of TEC index (ROTI) is provide by Lei Liu @ WHU
 - the suggestion of adding the option of 'printInfoWget' in configure file for (not) printing the information of running 'wget' by Dr Hong Hu @ AHU
 - the suggestion of adding the option of IGR, IGU, GFU (from GFZ), and WUU (from WHU) products as well as the site-specific broadcast ephemeris is provide by Menghao Li @ HEU
-- the suggestion of adding the option of various ultra-rapid and rapid orbit and clock products downloading is provided by Sermet Ogutcu @ Necmettin Erbakan University
+- the suggestion of adding the option of various ultra-rapid (i.e., from ESA, GFZ, IGS, WHU) and rapid (i.e., from CODE, NRCan, ESA, GFZ, IGS) orbit and clock products downloading is provided by Sermet Ogutcu @ Necmettin Erbakan University
 - the suggestion of modifying the setting of directories of GNSS observations and products in configure file is provided by Caoming Fan @ SDU
 # License
 Copyright (C) 2021 by SpAtial SurveyIng and Navigation (SASIN) Group at Shandong University of Science and Technology (SDUST), all rights reserved.
